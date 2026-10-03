@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxSteam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO (sticky: gruda no topo) -->
+  <header class="topo">
+    <h1 class="logo">TV Box Linux</h1>
+    <img id="logo" src="imagens\BoxSteam-sem-fundo.png" alt="Logo do BoxSteam">
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#passos">Passo a passo</a></li>
+        <li><a href="#usos">Usos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BANNER (relative + absolute) -->
+    <section class="banner">
+      <span class="selo">IFSC Gaspar</span>
+      <h2>Transformando TV Box em Computador Linux</h2>
+      <p>Aparelhos apreendidos pela Receita Federal ganham uma nova vida com o Armbian.</p>
+      <a href="#passos" class="botao">Ver como funciona</a>
+    </section>
+
+    <!-- SOBRE (flexbox) -->
+    <section id="sobre" class="secao">
+      <h2>Sobre o projeto</h2>
+      <div class="sobre">
+        <article class="caixa">
+          <h3>O problema</h3>
+          <p>Muitas TV Box irregulares são apreendidas e virariam lixo eletrônico.</p>
+        </article>
+        <article class="caixa">
+          <h3>A solução</h3>
+          <p>Instalar o Armbian, um Linux leve, e usar o aparelho como mini computador.</p>
+        </article>
+        <article class="caixa">
+          <h3>Quem faz</h3>
+          <p>Professores e estudantes do curso técnico integrado em Informática do Câmpus Gaspar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PASSO A PASSO (grid) -->
+    <section id="passos" class="secao">
+      <h2>Passo a passo</h2>
+      <ol class="passos">
+        <li class="passo"><strong>1</strong> Descobrir o processador (chip) da TV Box.</li>
+        <li class="passo"><strong>2</strong> Baixar a imagem do Armbian certa para o chip.</li>
+        <li class="passo"><strong>3</strong> Gravar a imagem num cartão SD ou pendrive.</li>
+        <li class="passo"><strong>4</strong> Ligar a TV Box pelo cartão e iniciar o sistema.</li>
+        <li class="passo"><strong>5</strong> Instalar na memória interna (eMMC).</li>
+        <li class="passo"><strong>6</strong> Configurar e instalar um ambiente gráfico.</li>
+      </ol>
+    </section>
+
+    <!-- USOS (grid) -->
+    <section id="usos" class="secao">
+      <h2>Para que serve</h2>
+      <div class="usos">
+        <div class="uso">Estudar programação</div>
+        <div class="uso">Laboratórios em escolas</div>
+        <div class="uso">Navegar na internet</div>
+        <div class="uso">Menos lixo eletrônico</div>
+      </div>
+    </section>
+
+    <!-- EQUIPE (flexbox) -->
+    <section id="equipe" class="secao">
+      <h2>Equipe do site</h2>
+      <div class="equipe">
+        <figure class="pessoa">
+          <div class="avatar"><img src="imagens\guilherme.png" alt=""></div>
+          <figcaption>Guilherme de Liz</figcaption>
+        </figure>
+        <figure class="pessoa">
+          <div class="avatar"><img src="imagens\gustavo.png" alt=""></div>
+          <figcaption>Gustavo S. Razera</figcaption>
+        </figure>
+        <figure class="pessoa">
+          <div class="avatar"><img src="imagens\Robson.jpg" alt=""></div>
+          <figcaption>Robson Machado</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>Avaliação 1 — HTML e CSS · IFSC Câmpus Gaspar · 2026</p>
+  </footer>
+
+  <!-- BOTÃO (fixed: fica parado na tela) -->
+  <a href="#" class="voltar">↑</a>
+
+
+
+  
+
+</body>
+</html>
