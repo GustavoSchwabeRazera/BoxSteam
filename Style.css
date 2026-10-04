@@ -18,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr; /* 3 colunas */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas */
     gap: 20px;
 }
 
@@ -46,11 +46,14 @@ img {
     position: static; /* position static (o padrão) */
 }
 
-/* ===== 4. ETAPAS (flexbox + relative) ===== */
+/* ===== 4. ETAPAS E EVENTOS (flexbox + relative) ===== */
 .Etapa1,
 .Etapa2,
-.Etapa3 {
-    position: relative; /* base para o .Maior absolute */
+.Etapa3,
+.Evento1,
+.Evento2,
+.Evento3 {
+    position: relative; /* base para o .Maior e o .Ano absolute */
     display: flex;
     flex-direction: column;
     background-color: var(--cor-card);
@@ -62,29 +65,17 @@ img {
 
 .Etapa1:hover,
 .Etapa2:hover,
-.Etapa3:hover {
+.Etapa3:hover,
+.Evento1:hover,
+.Evento2:hover,
+.Evento3:hover {
     transform: translateY(-5px);
 }
 
-/* Título "Etapa X" no canto do card */
-.Maior,
-.Etapa3 h3:first-child {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    margin: 10px 0;
-    padding: 5px 10px;
-    background-color: var(--cor-destaque);
-    color: white;
-    border-radius: var(--borda);
-}
 
-.Maior:empty {
-    display: none; /* esconde o h3 vazio da Etapa 3 */
-}
 
 /* ===== 5. MENSAGEM FINAL (fixed) ===== */
-#fim{
+#fim {
     position: fixed; /* fica parada embaixo da tela */
     bottom: 0;
     left: 0;
