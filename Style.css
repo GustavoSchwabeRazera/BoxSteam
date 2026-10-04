@@ -18,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-columns:  1fr 1fr 1fr; /* 3 colunas */
     gap: 20px;
 }
 
@@ -84,7 +84,7 @@ img {
 }
 
 /* ===== 5. MENSAGEM FINAL (fixed) ===== */
-body > p {
+#fim{
     position: fixed; /* fica parada embaixo da tela */
     bottom: 0;
     left: 0;
