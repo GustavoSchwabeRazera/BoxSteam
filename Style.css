@@ -95,6 +95,9 @@ img {
     background-color: var(--cor-destaque);
     color: white;
 }
+.link{
+    color: white;
+}
 
 /* ===== 6. ANIMAÇÃO ===== */
 @keyframes aparecer {
