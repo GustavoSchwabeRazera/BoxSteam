@@ -3,7 +3,7 @@
     --cor-principal: #2c3e50;
     --cor-destaque: #27ae60;
     --cor-fundo: #f2f2f2;
-    --cor-card: #ffffff;
+    --cor-card: #d4d4d4c0;
     --borda: 8px;
 }
 
@@ -36,7 +36,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     background-color: var(--cor-principal);
     color: white;
     border-radius: 0 0 var(--borda) var(--borda);
@@ -52,7 +52,10 @@ img {
 .Etapa3,
 .Evento1,
 .Evento2,
-.Evento3 {
+.Evento3,
+#introducao,
+#descaracterizacao,
+#oque{
     position: relative; /* base para o .Maior e o .Ano absolute */
     display: flex;
     flex-direction: column;
@@ -62,18 +65,54 @@ img {
     animation: aparecer 1s; /* animação */
     transition: transform 0.3s; /* transição */
 }
+#resultado,
+#equipe{
+    position: relative; /* base para o .Maior e o .Ano absolute */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-card);
+    padding: 20px;
+    border-radius: var(--borda);
+    animation: aparecer 1s; /* animação */
+    transition: transform 0.3s; /* transição */
+}
+#equipe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#equipe img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+#equipe h2 {
+    font-size: 20px;
+}
+
 
 .Etapa1:hover,
 .Etapa2:hover,
 .Etapa3:hover,
 .Evento1:hover,
 .Evento2:hover,
-.Evento3:hover {
+.Evento3:hover,
+#introducao:hover,
+#descaracterizacao:hover,
+#oque:hover,
+#resultado:hover{
     transform: translateY(-5px);
+}
+#equipe:hover{
+    transform: rotate(360deg);
 }
 
 
-
+#items{
+    padding: 5;
+}
 /* ===== 5. MENSAGEM FINAL (fixed) ===== */
 #fim {
     position: fixed; /* fica parada embaixo da tela */
@@ -88,6 +127,11 @@ img {
 }
 .link{
     color: white;
+}
+#logo{
+    position: relative;
+    height: 300px;
+    width: 300px;
 }
 
 /* ===== 6. ANIMAÇÃO ===== */
