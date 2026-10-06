@@ -1,4 +1,4 @@
-/* ===== 1. VARIÁVEIS (:root) ===== */
+
 :root {
     --cor-principal: #2c3e50;
     --cor-destaque: #27ae60;
@@ -7,18 +7,18 @@
     --borda: 8px;
 }
 
-/* ===== 2. GERAL (grid) ===== */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 0 20px 80px; /* espaço embaixo para a faixa fixa */
+    padding: 0 20px 80px; 
     font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px;
 }
 
@@ -26,10 +26,10 @@ img {
     max-width: 100%;
 }
 
-/* ===== 3. CABEÇALHO (sticky + flexbox) ===== */
+
 .CABECALHO {
-    grid-column: 1 / -1; /* ocupa a largura toda */
-    position: sticky; /* gruda no topo ao rolar */
+    grid-column: 1 / -1; 
+    position: sticky; 
     top: 0;
     z-index: 10;
     display: flex;
@@ -43,10 +43,10 @@ img {
 }
 
 .CABECALHO p {
-    position: static; /* position static (o padrão) */
+    position: static; 
 }
 
-/* ===== 4. ETAPAS E EVENTOS (flexbox + relative) ===== */
+
 .Etapa1,
 .Etapa2,
 .Etapa3,
@@ -56,25 +56,25 @@ img {
 #introducao,
 #descaracterizacao,
 #oque{
-    position: relative; /* base para o .Maior e o .Ano absolute */
+    position: relative; 
     display: flex;
     flex-direction: column;
     background-color: var(--cor-card);
     padding: 20px;
     border-radius: var(--borda);
-    animation: aparecer 1s; /* animação */
-    transition: transform 0.3s; /* transição */
+    animation: aparecer 1s; 
+    transition: transform 0.3s; 
 }
 #resultado,
 #equipe{
-    position: relative; /* base para o .Maior e o .Ano absolute */
+    position: relative; 
     display: flex;
     flex-direction: column;
     background-color: var(--cor-card);
     padding: 20px;
     border-radius: var(--borda);
-    animation: aparecer 1s; /* animação */
-    transition: transform 0.3s; /* transição */
+    animation: aparecer 1s; 
+    transition: transform 0.3s; 
 }
 #equipe {
     display: flex;
@@ -92,7 +92,15 @@ img {
     font-size: 20px;
 }
 
-
+.txt {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+  
+    margin: 0; 
+    padding: 10px; 
+}
 .Etapa1:hover,
 .Etapa2:hover,
 .Etapa3:hover,
@@ -113,9 +121,9 @@ img {
 #items{
     padding: 5;
 }
-/* ===== 5. MENSAGEM FINAL (fixed) ===== */
+
 #fim {
-    position: fixed; /* fica parada embaixo da tela */
+    position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
@@ -134,7 +142,7 @@ img {
     width: 300px;
 }
 
-/* ===== 6. ANIMAÇÃO ===== */
+
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -144,9 +152,9 @@ img {
     }
 }
 
-/* ===== 7. RESPONSIVO (@media) ===== */
+
 @media (max-width: 900px) {
     body {
-        grid-template-columns: 1fr; /* 1 coluna no celular */
+        grid-template-columns: 1fr; 
     }
 }
